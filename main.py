@@ -1,6 +1,4 @@
-def main():
-    print("Hello from yci107-core!")
+from fastapi import FastAPI
 
-
-if __name__ == "__main__":
-    main()
+# inizializza l'app
+app = FastAPI()
