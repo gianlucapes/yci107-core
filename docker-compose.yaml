@@ -1,0 +1,16 @@
+services:
+  yci107-core:
+    build: .
+    ports:
+      - "8107:8107"
+    volumes:
+      - .:/app
+    env_file:
+      - .env_docker
+    restart: always
+    networks:
+      - yci107_network
+
+networks:
+  yci107_network:
+    external: true
